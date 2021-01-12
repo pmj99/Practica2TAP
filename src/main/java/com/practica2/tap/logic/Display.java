@@ -1,3 +1,4 @@
+package com.practica2.tap.logic;
 import java.util.ArrayList;
 
 public class Display {
