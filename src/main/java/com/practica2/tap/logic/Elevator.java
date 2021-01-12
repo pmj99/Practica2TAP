@@ -1,6 +1,5 @@
 package com.practica2.tap.logic;
 
-
-public class Ascensor {
+public class Elevator {
 
 }
