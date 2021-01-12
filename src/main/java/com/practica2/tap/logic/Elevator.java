@@ -2,7 +2,7 @@ package com.practica2.tap.logic;
 
 import java.util.ArrayList;
 
-public class Elevator {
+public class Elevator extends Building{
     protected int current_floor;
     protected ArrayList<Integer> call_list;
     protected ElevatorState current_state;
