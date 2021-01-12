@@ -3,14 +3,10 @@ package com.example.application.views.ascensor;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.tomcat.jni.Buffer;
-
 import com.example.application.views.main.MainView;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.html.Div;
-import com.vaadin.flow.component.orderedlayout.FlexComponent;
-import com.vaadin.flow.component.orderedlayout.FlexComponent.Alignment;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.tabs.Tab;
@@ -19,8 +15,6 @@ import com.vaadin.flow.component.textfield.NumberField;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
-
-import net.bytebuddy.dynamic.loading.PackageDefinitionStrategy.ManifestReading.SealBaseLocator.NonSealing;
 
 @Route(value = "ascensores", layout = MainView.class)
 @PageTitle("Ascensores")
@@ -49,7 +43,6 @@ public class AscensorView extends VerticalLayout{
 			selectedPage.setVisible(true); //Se pone visible el tab seleccionado
 		});		
 
-		this.setWidth("100%");		
 		this.setHorizontalComponentAlignment(Alignment.CENTER, pages);
 		add(tabs, pages);
 	}
@@ -84,7 +77,7 @@ public class AscensorView extends VerticalLayout{
 		
 		VerticalLayout panelAscensor = new VerticalLayout();
 
-		panelAscensor.setDefaultHorizontalComponentAlignment(Alignment.CENTER);
+		panelAscensor.setHorizontalComponentAlignment(Alignment.CENTER, pantallaPlanta);
 		panelAscensor.getStyle().set("border", "1px solid #9E9E9E");			
 		panelAscensor.add(pantallaPlanta, new HorizontalLayout(col1, col2));				
 		
