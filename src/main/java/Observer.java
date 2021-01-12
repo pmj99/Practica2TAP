@@ -1,6 +1,8 @@
 
 public interface Observer {
 	
-	void update(int pisoActual);
+	void updateAscensor1(int pisoActual);
+	void updatAscensor2(int pisoActual);
+	void uptadeAscensor3(int pisoActual);
 
 }

@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 
 public class Planta implements Observer {
 	
@@ -12,15 +12,20 @@ public class Planta implements Observer {
 	private Display D2;
 	private Display D3;
 	
+	//private ArrayList<Boton> boton;
+	
 	public Planta() {
 		
-		
+	
 		
 		
 	}
+	
 	public void LlamarAscensor1(int plantaLlama) {
 		
 		B1.pulsar(1, plantaLlama, "ascensor1");
+		
+	
 	}
 	public void LlamarAscensor2(int plantaLlama) {
 		
@@ -31,25 +36,39 @@ public class Planta implements Observer {
 		B3.pulsar(1, plantaLlama, "ascensor3");
 		
 	}
-	public void EstadoAscensor1(Ascensor ascensor1,int pisoActual) {
+	public void EstadoAscensor1(int pisoActual) {
 		
-		D1.MostrarPisoAscensor(ascensor1, pisoActual);
+		D1.MostrarPisoAscensor(pisoActual);
 		
 	}
-	public void EstadoAscensor2(Ascensor ascensor2,int pisoActual) {
+	public void EstadoAscensor2(int pisoActual) {
 		
-		D2.MostrarPisoAscensor(ascensor2, pisoActual);
+		D2.MostrarPisoAscensor( pisoActual);
 	}
-	public void EstadoAscensor3(Ascensor ascensor3,int pisoActual) {
+	public void EstadoAscensor3(int pisoActual) {
 		
-		D3.MostrarPisoAscensor(ascensor3, pisoActual);
+		D3.MostrarPisoAscensor(pisoActual);
 		
 	}
 	@Override
-	public void update(int pisoActual) {
+	public void updateAscensor1(int pisoActual) {
 		// TODO Auto-generated method stub
 		
+		this.EstadoAscensor1(pisoActual);
 	}
+	@Override
+	public void updatAscensor2(int pisoActual) {
+		// TODO Auto-generated method stub
+		
+		this.EstadoAscensor2(pisoActual);
+	}
+	@Override
+	public void uptadeAscensor3(int pisoActual) {
+		// TODO Auto-generated method stub
+		
+		this.EstadoAscensor3(pisoActual);
+	}
+	
 	
 	
 	
