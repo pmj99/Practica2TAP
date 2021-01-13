@@ -34,10 +34,13 @@ public class Floor  {
 	public String noise(int plantaLlama, Elevator ele) {
 		// TODO Auto-generated method stub
 		
+		String messege = null;
+		
 		if(plantaLlama == ele.getCurrentFloor()) {
 			
-			return "ON";
+			messege="ON";
 		}
+		return messege;
 		
 	}
 
