@@ -3,11 +3,13 @@ package com.practica2.tap.logic;
 import java.util.ArrayList;
 
 public class Elevator {
+    protected int num_elevator;
     protected int current_floor;
     protected ArrayList<Integer> call_list;
     protected ElevatorState current_state;
 
-    public Elevator() {
+    public Elevator(int num_elevator) {
+        this.num_elevator = num_elevator;
         this.current_floor = 0;
         this.call_list = new ArrayList<Integer>();
         this.current_state = new DoorClosedState();
