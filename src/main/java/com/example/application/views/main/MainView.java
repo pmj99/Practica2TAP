@@ -24,6 +24,7 @@ import com.example.application.views.planta.PlantaView;
 import com.example.application.views.helloworld.HelloWorldView;
 import com.example.application.views.about.AboutView;
 import com.example.application.views.ascensor.AscensorView;
+import com.example.application.views.control.ControlView;
 
 /**
  * The main view is a top-level placeholder for other views.
@@ -86,7 +87,8 @@ public class MainView extends AppLayout {
         return new Tab[]{createTab("Hello World", HelloWorldView.class),
         				 createTab("About", AboutView.class),
         				 createTab("Ascensores", AscensorView.class),
-        				 createTab("Plantas", PlantaView.class)};
+        				 createTab("Plantas", PlantaView.class),
+        				 createTab("Control", ControlView.class)};
     }
 
     private static Tab createTab(String text, Class<? extends Component> navigationTarget) {
