@@ -1,9 +1,9 @@
-package com.example.application.views.control;
+package com.practica2.tap.views.control;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import com.example.application.views.main.MainView;
+import com.practica2.tap.views.main.MainView;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.formlayout.FormLayout;
